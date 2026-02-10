@@ -1,3 +1,4 @@
+from ast import Delete
 from fastapi import FastAPI, HTTPException, Request, Response, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -23,7 +24,7 @@ app.add_middleware(
 )
 
 # Database
-MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://jigarbarad1586_db_user:MongoDB1586@cluster0.ro1acqf.mongodb.net/?appName=Cluster0")
+MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://jigarbarad1586_db_user:MongoDB1586@cluster0.ro1acqf.mongodb.net/?appName=Cluster0")Delete nothing
 DB_NAME = os.environ.get("DB_NAME", "ajs_foodbar")
 
 # Try to use a real MongoDB if available (fast synchronous ping). If that
